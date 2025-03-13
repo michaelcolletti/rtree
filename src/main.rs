@@ -1,7 +1,7 @@
 use std::env;
 use std::fs;
 use std::path::Path;
-use std::time::{SystemTime, UNIX_EPOCH};
+use std::time::UNIX_EPOCH;
 
 use colored::*;
 
