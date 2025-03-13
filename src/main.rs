@@ -7,11 +7,7 @@ use colored::*;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
-    let path = if args.len() > 1 {
-        &args[1]
-    } else {
-        "."
-    };
+    let path = if args.len() > 1 { &args[1] } else { "." };
 
     let days = if args.len() > 2 {
         args[2].parse::<u64>().unwrap_or(0)
@@ -57,4 +53,3 @@ fn print_tree(path: &Path, level: usize, days: u64) {
         }
     }
 }
-
