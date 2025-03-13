@@ -52,6 +52,6 @@ jobs:
             - name: Push Docker image
                 run: docker push $APP:latest
 
-#            - name: Deploy to production
-#                run: |
-#                    ssh user@server 'docker pull $APP:latest && docker-compose up -d'
+- name: Deploy to production
+    run: |
+        ssh user@server 'docker pull $APP:latest && docker-compose up -d'
